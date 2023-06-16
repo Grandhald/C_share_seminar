@@ -1,7 +1,10 @@
 ﻿Console.WriteLine("Введите число: ");
-string number = Console.ReadLine();
-if (number.Length>2) {
-    Console.WriteLine(number[2]);
+int number = Convert.ToInt32(Console.ReadLine());
+if (number/100>1) {
+    while (number>999) {
+        number = number/10;
+    }
+    Console.WriteLine(number%10);
 }
 else {
     Console.WriteLine("Третьей цифры нет");
