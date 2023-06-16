@@ -1,8 +1,9 @@
-﻿Console.WriteLine("Введите число: ");
-string number = Console.ReadLine();
-if (number.Length>1) {
-    Console.WriteLine(number[1]);
+﻿Console.WriteLine("Введите трехзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int SecondNumber = (number/10)%10;
+if (number/100>1) {
+    Console.WriteLine(SecondNumber);
 }
 else {
-    Console.WriteLine("Второй цифры нет");
+    Console.WriteLine("Это не трехначное число нет");
 }
