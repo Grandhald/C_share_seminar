@@ -30,9 +30,7 @@ string PrintArray (double [] array)
     {
         massifPrint += $"{item}, ";
     }
-    string arrayPrint = massifPrint.Substring(0, massifPrint.Length-2);
-    arrayPrint += "]";
-    return arrayPrint;
+    return massifPrint.Substring(0, massifPrint.Length-2)+"]";
 }
 Console.WriteLine("Введите координаты первой точки");
 double [] firstPoint = GenArrayPoint();
