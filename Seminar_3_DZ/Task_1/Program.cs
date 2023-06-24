@@ -1,24 +1,32 @@
-﻿string Inputed (string message) 
+﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+int Inputed (string message) 
 {   
   Console.WriteLine(message);
-  string number = System.Console.ReadLine();
-    if (number.Length == 5) 
+  int number = Convert.ToInt32(System.Console.ReadLine());
+    if (number/10000>0 & number/10000<10) 
     {
-        return number;
+        Console.WriteLine("gfds");
+         return number;
     } 
-    else
-    {
-        System.Console.WriteLine("Вы ввели неверные данные. Попробуйте еще раз.");
-        return Inputed(message);
-    }
+   System.Console.WriteLine("Вы ввели неверные данные. Попробуйте еще раз.");
+   return Inputed(message);
 }
 
-string number = Inputed("Введите пятизначное число:");
-
-char [] reverse(string number)
+string ChekReverse(int number)
 {
-    char [] reverse = number.ToCharArray().Reverse().ToArray();
-    return reverse; 
-
+    string result = $"Число {number} является полиндромом";
+    string tempNumber = $"{number}";
+    for (int i = 0; i < tempNumber.Length/2; i++)
+    {
+        if (tempNumber[i] != tempNumber[tempNumber.Length-i-1])
+        {
+            result = $"Число {number} не является полиндромом";
+            break;
+        }
+    }
+    return result;
 }
-Console.WriteLine(reverse(number));   
+
+int number = Inputed("Введите пятизначное число:");
+
+Console.WriteLine(ChekReverse(number));   
