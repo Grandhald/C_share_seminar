@@ -26,17 +26,6 @@ int[] Fibbonaci(int number)
 }
 
 
-void PrintArray(int[] array)
-{
-    string massifPrint = "[";
-    foreach (int item in array)
-    {
-        massifPrint += $"{item}, ";
-    }
-    Console.WriteLine(massifPrint.Substring(0, massifPrint.Length - 2) + "]");
-}
-
-
 void Fib(int number, int one, int two)
 {
     Console.WriteLine(one);
