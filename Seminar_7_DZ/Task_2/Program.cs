@@ -57,7 +57,7 @@ int count_columns = Inputed("Введите количество столбцо�
 int min_line_num = Inputed("Введите нижнюю границу диапзона рандомных чисел: ");
 int max_line_num = Inputed("Введите верхнюю границу диапзона рандомных чисел: ");
 int row = Inputed("Введите номер строки: ");
-int columns = Inputed("Введите номер столбцы: ");
+int columns = Inputed("Введите номер столбца: ");
 
 double[,] inserted_array = GenerateInsertedArray(count_rows, count_columns, min_line_num, max_line_num);
 Console.WriteLine();
