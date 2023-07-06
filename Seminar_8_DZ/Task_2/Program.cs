@@ -52,7 +52,7 @@ int  SearchRowWithMaxSumArrayInserted(int[] sumElemRow)
         }
     }
   
-    return rowMinSumElem;
+    return rowMinSumElem+1;
 }
 
 void PrintInsertedArray(int[,] array)
@@ -88,6 +88,7 @@ int maxSumRowMassif = SearchRowWithMaxSumArrayInserted(sumElemRowMassif);
 
 PrintInsertedArray(massif);
 Console.WriteLine();
+Console.WriteLine("Сумма элементов каждой из строк");
 PrintArray(sumElemRowMassif);
 Console.WriteLine();
 Console.WriteLine($"Строка с минимальной суммой элементов -->> {maxSumRowMassif}");
