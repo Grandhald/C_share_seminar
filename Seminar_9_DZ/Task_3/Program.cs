@@ -29,4 +29,4 @@ double n = Inputed("Введите значение n: ");
 
 Console.WriteLine();
 
-Console.WriteLine(FunctionAkkerman(m, n));
+Console.WriteLine($"Значение функции Аккермана при m = {m} и n = {n} --> {FunctionAkkerman(m, n)}");
